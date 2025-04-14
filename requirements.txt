@@ -1,0 +1,7 @@
+fastapi[standard]
+uvicorn
+gunicorn
+sqlmodel
+pydantic
+sqlalchemy
+dbt-timescaledb

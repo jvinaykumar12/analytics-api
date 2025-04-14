@@ -1,0 +1,17 @@
+services:
+  app:
+    image: analytics-api
+    build:
+      dockerfile: Dockerfile 
+    ports: 
+      - "8000:8000" 
+    volumes:
+      - ./src:/code:rw
+    develop:
+      watch:
+        - action: rebuild
+          path: Dockerfile  
+        - action: rebuild
+          path: requirements.txt
+        - action: rebuild
+          path: src
