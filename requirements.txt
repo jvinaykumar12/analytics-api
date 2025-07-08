@@ -4,4 +4,3 @@ gunicorn
 sqlmodel
 pydantic
 sqlalchemy
-dbt-timescaledb
